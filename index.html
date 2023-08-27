@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio_website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            background-color: rgb(5, 89, 92);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(2, 57, 59);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(178, 178, 248);
+            font-size: 1.02em;
+        }
+
+        .left {
+            font-size: 1.8em;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0;
+        }
+
+        .firstsection>div {
+            width: 35%;
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+        }
+
+        .leftsection .button {
+            padding: 30px 0;
+        }
+        .leftsection .btn {
+            padding: 14px;
+            background: rgb(4, 115, 119);
+            color: white;
+            border: 2px solid white;
+            border-radius: 24px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .purple {
+            color: rgb(1, 17, 17);
+        }
+
+        #element {
+            color: rgb(1, 17, 17);
+        }
+
+        .rightsection img {
+            width: 90%;
+
+        }
+
+        main hr {
+            border: 0;
+            margin: 40px 90px;
+            background: rgb(9, 9, 102);
+            height: 2.2px;
+        }
+
+        .secondsection {
+            max-width: 85vw;
+            margin: auto;
+            height: 40vw;
+        }
+
+        .secondsection h1 {
+            font-size: 1.5rem;
+        }
+
+        .text-gray {
+            color: whitesmoke;
+        }
+
+        .secondsection .box {
+            background-color: white;
+            width: 77vw;
+            height: 2px;
+            margin: 55px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            width: 150px;
+            top: 75px;
+            font-size: 14px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 85px;
+            width: 150px;
+            color: whitesmoke;
+            font-size: 13px;
+        }
+
+        footer {
+            background-color: rgb(2, 57, 59);
+            /* height: 2px; */
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 150px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Puneet's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="/">Home</a> </li>
+                    <li> <a href="/">About</a></li>
+                    <li> <a href="/">Services</a></li>
+                    <li> <a href="/">Projects</a></li>
+                    <li> <a href="/">Contact me</a></li>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hey, My name is <br><span class="purple"><strong>Puneet Mishra</strong></span>
+                <div>and I am a</div>
+                <div>passionate</div>
+                <strong><span id="element"></span></strong>
+                <div class="button">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Github Profile</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="images/bg1.svg" alt="Process is going on...">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="images/front-end.png" alt="Internet sahi kro pahle chacha">
+                    <div class="vertical-title">Front-end developer (2018-2019)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod
+                        quae consequuntur doloribus repellat, sint accusantium inventore repellendus ullam sapiente?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/backend.png" alt="Internet sahi kro pahle chacha">
+                    <div class="vertical-title">Back-end developer (2019-2020)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod
+                        quae consequuntur doloribus repellat, sint accusantium inventore repellendus ullam sapiente?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/full stack.png" alt="Internet sahi kro pahle chacha">
+                    <div class="vertical-title">Full Stack developer (2020-2021)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod
+                        quae consequuntur doloribus repellat, sint accusantium inventore repellendus ullam sapiente?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/python_icon.png" alt="Internet sahi kro pahle chacha">
+                    <div class="vertical-title">Python developer (2021-2022)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod
+                        quae consequuntur doloribus repellat, sint accusantium inventore repellendus ullam sapiente?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/software.png" alt="Internet sahi kro pahle chacha">
+                    <div class="vertical-title">Senior software Engineer (2022-2023)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod
+                        quae consequuntur doloribus repellat, sint accusantium inventore repellendus ullam sapiente?
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Puneet's Portfolio_website</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>about</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>about</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>about</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            copyright &#169; , www.puneetdeveloper.com || All rights resevered.
+        </div>
+    </footer>
+    <!-- Setup and start animation! -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Designer', 'Graphics Designer', 'Web Developer', 'software Engineer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
